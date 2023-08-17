@@ -54,6 +54,17 @@ public class DBControl {
         return true;
     }
 
+    static class readjsonret{
+        public readjsonret(boolean a, String t){readed = a; text = t;}
+        public readjsonret(boolean a){readed = a; text = "";}
+        public boolean readed;
+        public String text;
+    }
+    static readjsonret ReadJsonFromFile(String url){
+        if(!new File(url).exists()) return new readjsonret(false);
+
+    }
+
     public static ErrorClass CreateUser(String username,String password,String email){
         if(Ready())return ErrorClass.not_ready;
         if(!username.matches("\\w+")) return ErrorClass.invalid_data;
@@ -74,11 +85,16 @@ public class DBControl {
         return ErrorClass.no_problem;
     }
 
-    class logindata{
-        ErrorClass ec;
-        String token;
+    static class logindata{
+        public logindata(ErrorClass e,String t){ec = e; token = t;}
+        public logindata(ErrorClass e){ec = e; token = "";}
+        public ErrorClass ec;
+        public String token;
     }
     public static logindata LoginUser(String username,String password){
-        
+        if(!username.matches("\\w+")) return new logindata(ErrorClass.invalid_data);
+        if(!password.matches("\\w+")) return new logindata(ErrorClass.invalid_data);
+        if(!new File(workdir+"user/"+username+".json").exists()) return  new logindata(ErrorClass.user_not_found);
+
     }
 }
