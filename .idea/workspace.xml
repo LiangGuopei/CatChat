@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a40a4e73-4b50-47aa-b310-516ebe3975f1" name="变更" comment="DB Control First Commit">
+    <list default="true" id="a40a4e73-4b50-47aa-b310-516ebe3975f1" name="变更" comment="摆烂！？">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/catver/cat/chat/ChatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/catver/cat/chat/db/ChatType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/catver/cat/chat/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/catver/cat/chat/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/catver/cat/chat/db/DBControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/catver/cat/chat/db/DBControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -69,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692284960177</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="摆烂！？">
+      <created>1692285889804</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692285889804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DB Control First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB Control First Commit" />
+    <MESSAGE value="摆烂！？" />
+    <option name="LAST_COMMIT_MESSAGE" value="摆烂！？" />
   </component>
 </project>
